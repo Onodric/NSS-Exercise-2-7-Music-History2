@@ -1,0 +1,104 @@
+<!-- You will be building the basic structure of your Music History application in HTML and making it look good with the skills you learned in CSS. -->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+<!-- 1. The links in the navigation bar don't need to link to anything just yet, you can use `<a href="#">View music</a>` for now -->
+      <ul>
+          <li><a href="#" class="selected">View Music</a></li>
+          <li><a href="#">Add Music</a></li>
+          <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="chooser">
+    <div class="sidebar">
+      <label for="song-length">Song Length:</label>
+      <input type="range" name="song-length" id="song-length" class="sidebar-range">
+      <label for="artist">Artist:</label>
+      <select id="artist" name="artist" size="1">
+        <option disabled selected value>Options</option>
+        <option>Phish</option>
+        <option>Amon Tobin</option>
+        <option>Beastie Boys</option>
+        <option>Medeski Martin &amp; Wood</option>
+        <option>The Beatles</option>
+      </select>
+      <label for="album">Album:</label>
+      <select id="album" name="album" size="1">
+        <option disabled selected value>Options</option>
+        <option>Junta</option>
+        <option>Out From Out Where</option>
+        <option>Check Your Head</option>
+        <option>ShackMan</option>
+        <option>Revolver</option>
+      </select>
+      <label for="genre">Genre</label>
+      <fieldset id="genre">
+        <input type="checkbox" id="rock" value="rock" name="genre">      
+          <label for="rock">Rock</label>
+        <input type="checkbox" id="classical" value="classical" name="genre">      
+          <label for="classical">Classical</label>
+        <input type="checkbox" id="pop" value="pop" name="genre">      
+          <label for="pop">Pop</label>
+        <input type="checkbox" id="jazz" value="jazz" name="genre">      
+          <label for="jazz">Jazz</label>
+        <input type="checkbox" id="blues" value="blues" name="genre">      
+          <label for="blues">Blues</label>
+        <input type="checkbox" id="hiphop" value="hiphop" name="genre">      
+          <label for="hiphop">Hip-hop</label>
+      </fieldset>
+      <button type="submit" class="btn-filter">Filter</button>
+    </div>
+  </aside>
+  <section id="song-cards">
+<!-- 1. Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use `h1` tags, `div` tags, `section` tags... whatever you like. -->
+    <article class="card">
+      <h2 class="song-title">You Enjoy Myself</h2>
+      <!-- <h5 class="duration">Duration</h5> -->
+      <ul>
+          <li class="descriptor">Phish</li>
+          <li class="descriptor">Junta</li>
+          <li class="descriptor">Jazz</li>
+      </ul>      
+    </article>
+    <article class="card">
+      <h2 class="song-title">Verbal</h2>
+      <!-- <h5 class="duration">Duration</h5> -->
+      <ul>
+          <li class="descriptor">Amon Tobin</li>
+          <li class="descriptor">Out From Out Where</li>
+          <li class="descriptor">Jazz</li>
+      </ul>      
+    </article>
+    <article class="card">
+      <h2 class="song-title">Taxman</h2>
+      <!-- <h5 class="duration">Duration</h5> -->
+      <ul>
+          <li class="descriptor">The Beatles</li>
+          <li class="descriptor">Revolver</li>
+          <li class="descriptor">Rock</li>
+      </ul>      
+    </article>
+    <article class="card">
+      <h2 class="song-title">Whatcha Want</h2>
+      <!-- <h5 class="duration">Duration</h5> -->
+      <ul>
+          <li class="descriptor">Beastie Boys</li>
+          <li class="descriptor">Check Your Head</li>
+          <li class="descriptor">Hip-Hop</li>
+      </ul>      
+    </article>
+  </section>
+</body>
+</html>
+
